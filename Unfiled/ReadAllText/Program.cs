@@ -13,7 +13,7 @@ namespace ReadAllText
         {
             // Read the file as one string.
             System.IO.StreamReader myFile =
-               new System.IO.StreamReader("c:\\TestProjects\\Truck.txt");
+               new System.IO.StreamReader(args[0]);
             string myString = myFile.ReadToEnd();
 
             myFile.Close();
